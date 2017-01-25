@@ -15,7 +15,7 @@ function ItunesService(){
                       albumArt: song.artworkUrl60,
                       artist: song.artistName,
                       collection: song.collectionName,
-                      price: song.collectionPrice,
+                      price: song.trackPrice,
                       preview: song.previewUrl
                     };
                 })

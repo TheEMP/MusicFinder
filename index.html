@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <title>Itunes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 center-align">
+                <form class="form-inline" onsubmit="itunesCtrl.getMusic(event)">
+                    <div class="form-group input-field">
+                        <input type="text" class="form-control white-text" name="artist" placeholder="Artist Name" />
+                        <button type="submit" class="btn btn-primary purple lighten-1 waves-effect waves-light" type="submit" id="get-music-button">Search Music</button>
+                    </div>
+                </form>
+    <div class="preloader-wrapper big active" style="visibility:hidden" id="loader">
+      <div class="spinner-layer spinner-blue">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-red">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-yellow">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-green">
+        <div class="circle-clipper left">
+          <div class="circle"></div>
+        </div><div class="gap-patch">
+          <div class="circle"></div>
+        </div><div class="circle-clipper right">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 center-align">
+                <h1 class="purple-text lighten-1" id="helpertext"><h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s8 offset-s2">
+                <ul class="collection" id="songs">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="itunes-service.js"></script>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    </body>
+
+    </html>

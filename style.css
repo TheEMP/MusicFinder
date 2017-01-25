@@ -1,0 +1,16 @@
+.input-field input[type=text]:focus + label {
+     color: #9c27b0;
+   }
+   /* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #ab47bc ;
+    box-shadow: 0 1px 0 0 #ab47bc;
+}
+
+.input-field .prefix.active {
+     color: #ab47bc;
+   }
+
+   body {
+  background: #372940;
+}
